@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="hello.js">
+    </script>
+</head>
+<body>
+    <div id="main">
+    <div>
+        <h1>Hello Sasiii!!!<br>Here are your Stack & Queue Operations </h1>
+    <hr>
+    <br>
+    <form id="choose">
+    <fieldset>
+        <legend>
+            <h3>Select Operation...</h3>
+        </legend>
+        <select name="selOp" onchange="onCall(this.value)">
+            <option value="">Enter any option...</option>
+            <option value = "stack">STACK - FILO</option>
+            <option value = "queue">QUEUE - FIFO</option>
+        </select>
+    </fieldset>
+    </form>
+    </div>
+<br>
+ 
+<div id="stack">
+        <h2>Stack Operations...<br>Press PUSH to enter an element or POP to remove an element</h2>
+        <hr><br>
+        Enter any value : <input type="text" id="sdata" onfocus="this.value=''" value="Enter here">
+        <br><br>
+        <button id="push" onclick="onStack('push')" disabled>PUSH</button>
+        <button id="pop" onclick="onStack('pop')" disabled>POP</button>
+        <button id="peek" onclick="onStack('peek')" disabled>PEEK</button>
+        <br>
+    </fieldset>
+    </form>
+</div>
+
+<br>
+<div id="queue">
+    <h2>Queue Operations...<br>Press ENQUEUE to enter an element or DEQUEUE to remove an element</h2>
+    <hr><br>
+    Enter any value : <input type="text" id="qdata" onfocus="this.value=''" value="Enter here"">
+    <br><br>
+    <button id="enqueue" onclick="onQueue('enque')" disabled>ENQUEUE</button>
+    <button id="dequeue" onclick="onQueue('deque')" disabled>DEQUEUE</button>
+</div>
+    <div id="display">
+        <h2>Here is your result...</h2>
+        <div id='result'></div>
+    </div>
+    </div>
+</body>
+</html>

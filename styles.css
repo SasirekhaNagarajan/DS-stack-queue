@@ -1,0 +1,65 @@
+body {
+    background-image: url(./Images/4.png);
+    color: white;
+    text-align: center;
+}
+
+#main {
+    border-radius: 3%;
+    padding: 4%;
+}
+
+#choose {
+    position: absolute;
+    top : 20%;
+    left: 40%;
+    right: 40%;
+}
+
+#stack {
+    background-color: white;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 33%;
+    left: 15%;
+    bottom: 40%;
+    right: 65%;
+    padding: 5px;
+    border-radius: 3%;
+    opacity: 0.4;
+    border: 1px solid black;
+}
+
+#queue {
+    background-color: white;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 33%;
+    left: 65%;
+    bottom: 40%;
+    right: 15%;
+    padding: 5px;
+    border-radius: 3%;
+    opacity: 0.4;
+    border: 1px solid black;
+}
+
+#display {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    bottom: 15%;
+    right: 35%;
+}
+
+#result {
+    font-size: 20px;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    color: black;
+}
